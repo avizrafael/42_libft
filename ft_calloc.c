@@ -1,32 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 12:52:41 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 20:29:41 by raviz-es         ###   ########.fr       */
+/*   Created: 2023/11/07 20:26:02 by raviz-es          #+#    #+#             */
+/*   Updated: 2023/11/07 20:26:04 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalnum(int c)
-{
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (8);
-	else
-		return (0);
-}
-
-/*
-#include <unistd.h>
-#include <ctype.h>
-int	main(void)
-{
-	printf("%d", ft_isalnum('@'));
-	printf("\n%d", isalnum('@'));
-	return (0);
-}
-*/
