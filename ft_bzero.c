@@ -1,21 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 11:52:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:52:54 by raviz-es         ###   ########.fr       */
+/*   Created: 2023/11/07 16:28:07 by raviz-es          #+#    #+#             */
+/*   Updated: 2023/11/07 17:46:03 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int	ft_isalpha(int c)
+#include <stdio.h>
+#include <string.h>
+
+void	ft_bzero(void *str, size_t n)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1024);
-	else
-		return (0);
+	while (n > 0)
+	{
+		*(unsigned char *)str++ = 0;
+		n--;
+	}
+}
+
+int main () {
+   char str[50];
+
+   strcpy(str,"This is string.h library function");
+   puts(str);
+
+   ft_bzero(str, 2);
+   puts(str);
+   
+   return(0);
 }

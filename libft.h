@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 11:52:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:52:54 by raviz-es         ###   ########.fr       */
+/*   Created: 2023/11/07 18:08:56 by raviz-es          #+#    #+#             */
+/*   Updated: 2023/11/07 18:24:36 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+#define LIBFT_H
+#include <stdlib.h>
+#include <unistd.h>
 
-int	ft_isalpha(int c)
-{
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1024);
-	else
-		return (0);
-}
+int ft_isalpha(int c);
+int ft_isdigit(int c);
+
+#endif

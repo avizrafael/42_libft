@@ -1,21 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 11:52:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:52:54 by raviz-es         ###   ########.fr       */
+/*   Created: 2023/11/07 15:06:13 by raviz-es          #+#    #+#             */
+/*   Updated: 2023/11/07 15:14:58 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
-int	ft_isalpha(int c)
+int	ft_strlen(char *str)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1024);
-	else
-		return (0);
+	int	i;
+
+	i = 0;
+	while(str[i] != '\0')
+		i++;
+	return (i);
+}
+
+#include <unistd.h>
+int	main(void)
+{
+	char	x[] = "Hello s 5";
+	int	y;
+
+	y = ft_strlen(x);
+	printf("%s %i",x , y);
 }

@@ -1,21 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 11:52:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:52:54 by raviz-es         ###   ########.fr       */
+/*   Created: 2023/11/07 15:15:53 by raviz-es          #+#    #+#             */
+/*   Updated: 2023/11/07 16:24:16 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-int	ft_isalpha(int c)
+void	*ft_memset(void *str, int c, size_t n)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1024);
-	else
-		return (0);
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)str;
+	while (n > 0)
+	{
+		*(ptr++) = (unsigned char)c;
+		n--;
+	}
+	return(str);
+}
+
+
+
+int main () {
+   char str[50];
+
+   strcpy(str,"This is string.h library function");
+   puts(str);
+
+   ft_memset(str,'$',3);
+   puts(str);
+   
+   memset(str,'$',4);
+   puts(str);
+   
+   return(0);
 }
