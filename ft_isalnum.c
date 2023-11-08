@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:52:41 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 20:29:41 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 11:49:56 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/*
-#include <unistd.h>
-#include <ctype.h>
-int	main(void)
-{
-	printf("%d", ft_isalnum('@'));
-	printf("\n%d", isalnum('@'));
-	return (0);
-}
-*/

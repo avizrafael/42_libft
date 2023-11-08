@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:08:56 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 21:04:36 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 11:55:30 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,11 @@ int ft_isalnum(int c);
 int ft_isascii(int c);
 int ft_isdigit(int c);
 int ft_isprint(int c);
+int ft_strlen(char *str);
+void    *ft_memset(void *str, int c, size_t n);
+void	ft_bzero(void *str, size_t n);
 
-ft_strlen
-ft_memset
-ft_bzero
+/*
 ft_memcpy
 ft_memmove
 ft_strlcpy
@@ -52,6 +53,6 @@ void ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char *s, int fd);
 void ft_putendl_fd(char *s, int fd);
 void ft_putnbr_fd(int n, int fd);
-
+/*
 
 #endif

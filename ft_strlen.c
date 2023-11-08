@@ -6,11 +6,11 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 15:06:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 15:14:58 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 11:51:05 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {
@@ -20,14 +20,4 @@ int	ft_strlen(char *str)
 	while(str[i] != '\0')
 		i++;
 	return (i);
-}
-
-#include <unistd.h>
-int	main(void)
-{
-	char	x[] = "Hello s 5";
-	int	y;
-
-	y = ft_strlen(x);
-	printf("%s %i",x , y);
 }
