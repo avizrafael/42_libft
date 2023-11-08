@@ -6,9 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 16:28:07 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 11:53:31 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:31:57 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Places n zero-valued bytes in the area pointed to by s.
+*/
 
 #include "libft.h"
 

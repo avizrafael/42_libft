@@ -6,9 +6,16 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:31:25 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:52:56 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:15:18 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Checks if the passed character is a decimal digit character and
+returns non-zero value if c is a digit, else it returns 0.
+
+c − This is the character to be checked.
+*/
 
 #include "libft.h"
 

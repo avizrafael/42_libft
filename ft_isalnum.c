@@ -6,9 +6,14 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:52:41 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 11:49:56 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:22:39 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Checks if the passed character is alphanumeric and
+returns non-zero value if c is a digit or a letter, else it returns 0.
+*/
 
 #include "libft.h"
 
