@@ -6,7 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:55 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:02:01 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:33:35 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char *ft_strrchr(const char *str, int c)
+{
+    
+}

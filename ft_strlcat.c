@@ -6,7 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:00 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:01:04 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:27:17 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
+
+}

@@ -6,7 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:02:48 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 18:02:51 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:38:08 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int ft_memcmp(const void *str1, const void *str2, size_t n)
+{
+
+}
