@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:26:02 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:46:14 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:48:44 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ as calloc sets allocated memory to zero.
 
 #include "libft.h"
 
-/*
 void	*ft_calloc(size_t nitems, size_t size)
 {
 	size_t	t_size;
@@ -30,17 +29,4 @@ void	*ft_calloc(size_t nitems, size_t size)
 		return (NULL);
 	ft_bzero(dst, t_size);
 	return (dst);
-}
-*/
-
-void	*ft_calloc(size_t nmemb, size_t size)
-{
-	void	*ptr;
-
-	if (nmemb == 0 || size == 0)
-		return (malloc(0));
-	if ((ptr = malloc(nmemb * size)) == NULL)
-		return (NULL);
-	ft_memset((unsigned char *)ptr, 0, nmemb * size);
-	return (ptr);
 }

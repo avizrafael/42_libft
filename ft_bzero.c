@@ -6,12 +6,16 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 16:28:07 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 18:11:59 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/12 22:35:01 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Places n zero-valued bytes in the area pointed to by s.
+Takes a pointer to a memory block and the number of bytes to set to zero. 
+It treats the memory block as an array of unsigned characters (bytes) and 
+iterates through each byte in the block. In each iteration, it assigns the 
+value 0 to the current byte by dereferencing the ‘s’ pointer and casting it 
+to an unsigned char pointer.
 */
 
 #include "libft.h"

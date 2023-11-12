@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:25 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:20:37 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/12 22:41:37 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ static char	*str_new(size_t n)
 char	*ft_itoa(int n)
 {
 	unsigned int	nbr;
-	int		sign;
-	int		len;
-	char		*str;
+	char	*str;
+	int	sign;
+	int	len;
 
 	sign = 0;
 	if (n < 0)
