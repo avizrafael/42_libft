@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:03:01 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/09 20:55:24 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/12 19:40:02 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ the first occurrence of little is returned.
 
 #include "libft.h"
 
+/*
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
@@ -44,6 +45,30 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			j = 0;
 		}
 		i++;
+	}
+	return (NULL);
+}
+*/
+
+char	*ft_strnstr(char const *haystack, char const *needle, size_t n)
+{
+	size_t	j;
+
+	if (!haystack && !n)
+		return (NULL);
+	if (!*needle)
+		return ((char *)haystack);
+	while (*haystack && n--)
+	{
+		j = 0;
+		while (*(haystack + j) == *(needle + j)
+			&& *(needle + j) && j <= n)
+		{
+			if (!*(needle + j + 1))
+				return ((char *)haystack);
+			j++;
+		}
+		haystack++;
 	}
 	return (NULL);
 }

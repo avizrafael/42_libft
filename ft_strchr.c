@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:42 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 16:17:04 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/12 19:37:15 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ by the argument str.
 
 #include "libft.h"
 
+/*
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str != '\0' && c != *str)
@@ -26,4 +27,19 @@ char	*ft_strchr(const char *str, int c)
 	if (c == *str)
 		return ((char *)str);
 	return (0);
+}
+*/
+
+char	*ft_strchr(char const *str, int c)
+{
+	while (*str)
+	{
+		if (*str == (char)c)
+			return ((char *)str);
+		str++;
+	}
+	if (*str == (char)c)
+		return ((char *)str);
+	else
+		return (NULL);
 }

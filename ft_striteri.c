@@ -6,7 +6,20 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:49 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/07 21:05:50 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/12 19:26:58 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		f(i, s + i);
+		i++;
+	}
+}
