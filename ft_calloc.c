@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:26:02 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 19:02:30 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/13 22:52:42 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_calloc(size_t nitems, size_t size)
 	void	*dst;
 
 	t_size = size * nitems;
-	if (size && SIZE_MAX / size < nitems)
+	if (nitems && size && nitems > (UINT_MAX / size))
 		return (NULL);
 	dst = (void *)malloc(t_size);
 	if (!dst)
