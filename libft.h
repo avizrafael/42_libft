@@ -6,14 +6,16 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:08:56 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 18:54:00 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/13 17:52:53 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef	LIBFT_H
 #define	LIBFT_H
+
 #include	<stdlib.h>
 #include	<unistd.h>
+#include    <stdint.h>
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
@@ -21,7 +23,7 @@ int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
-int	ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *str, size_t n);
 void	*ft_memcpy(void *dest, const void * src, size_t n);

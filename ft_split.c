@@ -6,40 +6,39 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:06:05 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:20:37 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-static size_t	count_words(char const *s, char c)
+static size_t	n_words(char const *str, char c)
 {
-	size_t	count;
+	size_t	n;
 	size_t	i;
 
-	count = 0;
+	n = 0;
 	i = 0;
-	while (*(s + i))
+	while (*(str + i))
 	{
-		if (*(s + i) != c)
+		if (*(str + i) != c)
 		{
-			count++;
-			while (*(s + i) && *(s + i) != c)
+			n++;
+			while (*(str + i) && *(str + i) != c)
 				i++;
 		}
-		else if (*(s + i) == c)
+		else if (*(str + i) == c)
 			i++;
 	}
-	return (count);
+	return (n);
 }
 
-static size_t	get_word_len(char const *s, char c)
+static size_t	get_wordlen(char const *str, char c)
 {
 	size_t	i;
 
 	i = 0;
-	while (*(s + i) && *(s + i) != c)
+	while (*(str + i) && *(str + i) != c)
 		i++;
 	return (i);
 }
@@ -54,24 +53,24 @@ static void	free_array(size_t i, char **array)
 	free(array);
 }
 
-static char	**split(char const *s, char c, char **array, size_t words_count)
+static char	**split(char const *str, char c, char **array, size_t words)
 {
 	size_t	i;
 	size_t	j;
 
 	i = 0;
 	j = 0;
-	while (i < words_count)
+	while (i < words)
 	{
-		while (*(s + j) && *(s + j) == c)
+		while (*(str + j) && *(str + j) == c)
 			j++;
-		*(array + i) = ft_substr(s, j, get_word_len(&*(s + j), c));
+		*(array + i) = ft_substr(str, j, get_wordlen(&*(str + j), c));
 		if (!*(array + i))
 		{
 			free_array(i, array);
 			return (NULL);
 		}
-		while (*(s + j) && *(s + j) != c)
+		while (*(str + j) && *(str + j) != c)
 			j++;
 		i++;
 	}
@@ -79,17 +78,17 @@ static char	**split(char const *s, char c, char **array, size_t words_count)
 	return (array);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(char const *str, char c)
 {
 	char	**array;
 	size_t	words;
 
-	if (!s)
+	if (!str)
 		return (NULL);
-	words = count_words(s, c);
+	words = n_words(str, c);
 	array = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!array)
 		return (NULL);
-	array = split(s, c, array, words);
+	array = split(str, c, array, words);
 	return (array);
 }

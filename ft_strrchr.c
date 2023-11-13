@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:55 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:38:44 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:51:27 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,6 @@ returns a null pointer.
 */
 
 #include "libft.h"
-
-/*
-char	*ft_strrchr(const char *str, int c)
-{
-	int	i;
-
-	i = ft_strlen((char *)str);
-	if (c == 0)
-		return ((char *)str + 1);
-	while (i >= 0)
-	{
-		if (str[i] == c)
-			return ((char *)str + 1);
-		i--;
-	}
-	return (NULL);
-}
-*/
 
 char	*ft_strrchr(char const *str, int c)
 {

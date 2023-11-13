@@ -6,49 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:04:23 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:42:59 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:20:55 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	size_t	i;
-	size_t	j;
-	char	*str;
-
-	str = (char *)malloc(sizeof(*s) * (len + 1));
-	if (str == 0)
-		return (NULL);
-	i = 0;
-	j = 0;
-	while (s[i])
-	{
-		if (i >= start && j < len)
-		{
-			str[j] = s[i];
-			j++;
-		}
-		i++;
-	}
-	str[j] = 0;
-	return (str);
-}
-*/
-
-static size_t	str_len(char const *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (*(str + i))
-		i++;
-	return (i);
-}
-
-static char	*str_new(size_t n)
+static char	*new_str(size_t n)
 {
 	char	*str;
 
@@ -65,11 +29,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (start > str_len(s))
+	if (start > ft_strlen(s))
 		len = 0;
-	else if (len > (str_len(s) - start))
-		len = str_len(s) - start;
-	str = str_new(len);
+	else if (len > (ft_strlen(s) - start))
+		len = ft_strlen(s) - start;
+	str = new_str(len);
 	if (!str)
 		return (NULL);
 	s += start;

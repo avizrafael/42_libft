@@ -6,7 +6,7 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:00:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:36:00 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:54:23 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,34 +25,6 @@ n − This is the number of bytes to be copied.
 */
 
 #include "libft.h"
-
-/*
-void	*ft_memmove(void *str1, const void *str2, size_t n)
-{
-	size_t	i;
-
-	i = 0;
-	if (str2 < str1)
-	{
-		i = n;
-		while (n > 0)
-		{
-			i--;
-			((unsigned char *)str1)[i] = ((unsigned char *)str2)[i];
-		}
-	}
-	else
-	{
-		i = 0;
-		while (i < n)
-		{
-			((unsigned char *)str1)[i] = ((unsigned char *)str2)[i];
-			i++;
-		}
-	}
-	return (str1);
-}
-*/
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -75,4 +47,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest_ptr);
 }
-
