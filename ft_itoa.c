@@ -6,9 +6,14 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:25 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 19:48:30 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/16 20:36:44 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Converts an integer value to a null-terminated string using the specified base 
+and stores the result in the array given by str parameter.
+*/
 
 #include "libft.h"
 

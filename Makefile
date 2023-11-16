@@ -6,7 +6,7 @@
 #    By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/12 22:50:20 by raviz-es          #+#    #+#              #
-#    Updated: 2023/11/13 17:47:12 by raviz-es         ###   ########.fr        #
+#    Updated: 2023/11/16 20:16:20 by raviz-es         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,8 @@ CFLAGS 	= -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME):
+		$(CC) $(CFLAGS) -c $(SRCS)
 		ar -rc $(NAME) $(OBJS)
 
 clean:
@@ -64,6 +65,6 @@ clean:
 fclean:	clean
 		rm -f $(NAME)
 
-re:		fclean $(NAME)
+re:		fclean all
 
 .PHONY: all clean fclean re

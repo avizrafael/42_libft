@@ -6,14 +6,14 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:26:02 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 22:52:42 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/16 20:24:40 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 Allocates the requested memory and returns a pointer to it. The difference 
 in malloc and calloc is that malloc does not set the memory to zero where 
-as calloc sets allocated memory to zero.
+as calloc sets allocated memory to zero. UINT_MAX / size to avoid overflow.
 */
 
 #include "libft.h"
