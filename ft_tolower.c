@@ -6,9 +6,14 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:29 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 16:08:30 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 13:33:54 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Checks if 'c' is in the uppercase letter range and sum 32  from its ASCII 
+value to convert it to the corresponding lowercase.
+*/
 
 #include "libft.h"
 

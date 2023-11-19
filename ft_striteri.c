@@ -6,9 +6,14 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:49 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:26:58 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:04:28 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Applies a function to each character of a string, providing the index 
+and a pointer to the character.
+*/
 
 #include "libft.h"
 

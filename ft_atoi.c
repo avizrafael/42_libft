@@ -6,13 +6,12 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:03:16 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 22:49:38 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:27:32 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Converts the string argument str to an integer (type int).
-Scans the input string and converts it to an integer. Skips any space, 
+Search the input string and converts it to an integer. Skips any space, 
 if a (+) or (-) sign, determines the sign. Processes each digit character 
 and calculates the corresponding integer value.
 */

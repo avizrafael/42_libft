@@ -6,9 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:04:23 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 13:20:55 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 15:12:37 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Create substring from s with lenght defined in start and len
+*/
 
 #include "libft.h"
 

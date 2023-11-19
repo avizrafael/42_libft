@@ -6,7 +6,7 @@
 #    By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/12 22:50:20 by raviz-es          #+#    #+#              #
-#    Updated: 2023/11/19 11:54:44 by raviz-es         ###   ########.fr        #
+#    Updated: 2023/11/19 18:52:31 by raviz-es         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,11 +53,11 @@ CC		= cc
 
 CFLAGS 	= -Wall -Wextra -Werror
 
+all: $(NAME)
+
 $(NAME):
 		$(CC) $(CFLAGS) -c $(SRCS)
 		ar -rc $(NAME) $(OBJS)
-
-all: $(NAME)
 
 clean:
 		rm -f $(OBJS)

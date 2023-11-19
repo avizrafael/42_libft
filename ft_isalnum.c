@@ -6,13 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:52:41 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/16 20:27:10 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:27:19 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Checks if the passed character is alphanumeric and
-returns non-zero value if c is a digit or a letter, else it returns 0.
+Checks if the passed character is alphanumeric and returns non-zero value
+if c is a digit or a letter.
 */
 
 #include "libft.h"

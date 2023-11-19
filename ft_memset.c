@@ -6,14 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 15:15:53 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 14:29:35 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:39:56 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Copies the character c (an unsigned char) to the first n characters of the 
-string pointed to, by the argument str and returns a pointer 
-to the memory area str.
+Copies the character c to the first n characters of the string pointed to, 
+by the argument str and returns a pointer to the memory area str.
 */
 
 #include "libft.h"

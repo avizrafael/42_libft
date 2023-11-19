@@ -6,30 +6,45 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:00 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 18:56:51 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 15:09:57 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+Searches for characters to be removed from the beginning and end of a string
+*/
+
 #include "libft.h"
+
+static char	*new_str(size_t n)
+{
+	char	*str;
+
+	str = (char *)malloc(sizeof(char) * (n + 1));
+	if (!str)
+		return (NULL);
+	return (str);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	size_t	j;
-	char	*str;
+	size_t	start;
+	size_t	end;
+	char	*trim;
 
-	str = 0;
+	trim = NULL;
 	if (s1 != 0 && set != 0)
 	{
-		i = 0;
-		j = ft_strlen(s1);
-		while (s1[i] && ft_strchr(set, s1[i]))
-			i++;
-		while (s1[j - 1] && ft_strchr(set, s1[j - 1]) && j > i)
-			j--;
-		str = (char *)malloc(sizeof(char) * (j - i + 1));
-		if (str)
-			ft_strlcpy(str, &s1[i], j - i + 1);
+		start = 0;
+		end = ft_strlen(s1);
+		while (s1[start] && ft_strchr(set, s1[start]))
+			start++;
+		while (s1[end - 1] && ft_strchr(set, s1[end - 1]) && end > start)
+			end--;
+		trim = new_str(end - start);
+		if (!trim)
+			return (NULL);
+		ft_strlcpy(trim, &s1[start], end - start + 1);
 	}
-	return (str);
+	return (trim);
 }

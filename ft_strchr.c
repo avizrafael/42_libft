@@ -6,15 +6,12 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:42 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 11:55:51 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:50:25 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Searches for the first occurrence of the character c (an unsigned char) 
-in the string pointed to by the argument str and searches for the first 
-occurrence of the character c (an unsigned char) in the string pointed to 
-by the argument str.
+Searches for the first occurrence of the character c.
 */
 
 #include "libft.h"

@@ -6,9 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 12:20:37 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:50:17 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Splits a string into an array of substrings based on a delimiter character.
+*/
 
 #include "libft.h"
 

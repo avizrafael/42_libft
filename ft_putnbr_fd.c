@@ -6,9 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:06:33 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/12 19:32:37 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 17:36:28 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Convert an integer to a decimal/caracter and give to a file descriptor
+*/
 
 #include "libft.h"
 

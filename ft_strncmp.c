@@ -6,15 +6,12 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:02:18 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 16:36:26 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:50:51 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 Compares at most the first n bytes of str1 and str2
-str1 − This is the first string to be compared.
-str2 − This is the second string to be compared.
-n − The maximum number of characters to be compared.
 */
 
 #include "libft.h"

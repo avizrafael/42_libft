@@ -6,15 +6,12 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:01:55 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/13 11:51:27 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 15:14:07 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Searches for the last occurrence of the character c (an unsigned char) 
-in the string pointed to, by the argument str and returns a pointer to the 
-last occurrence of character in str. If the value is not found, the function 
-returns a null pointer.
+Searches for the last occurrence of the character c
 */
 
 #include "libft.h"

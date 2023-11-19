@@ -6,14 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:59 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/08 14:25:00 by raviz-es         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:30:21 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Checks whether the passed character is printable. 
-A printable character is a character that is not a control character and
-returns a non-zero value(true) if c is a printable character else, zero (false).
+Checks if character is printable. A printable character is a character 
+that is not a control character and returns a non-zero value.
 */
 
 #include "libft.h"
