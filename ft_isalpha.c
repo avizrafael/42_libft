@@ -6,13 +6,13 @@
 /*   By: raviz-es <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:52:13 by raviz-es          #+#    #+#             */
-/*   Updated: 2023/11/19 18:27:15 by raviz-es         ###   ########.fr       */
+/*   Updated: 2024/01/07 14:06:25 by raviz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 Checks if the passed character is alphabetic and returns non-zero value 
-if c is an alphabet.
+if c is an alphabet x.
 */
 
 #include "libft.h"
